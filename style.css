@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Public Sans', sans-serif;
+    src: url('./assets/Public_Sans/PublicSans-Italic-VariableFont_wght.ttf') format('ttf'),
+        url('./assets/Public_Sans/PublicSans-VariableFont_wght.ttf') format('ttf');
+
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* ==========header-content================================ */
+nav,
+.menu-btns,
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    justify-content: space-between;
+}
+
+.menu-items li,
+.menu-btns li {
+    color: #130541;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu-items li {
+    margin-right: 30px;
+}
+
+.menu-btns li {
+    margin-right: 20px;
+}
+.menu-btns .subscribe a{
+ color: #fff;
+  padding: 9px 18px 8px 23px;
+  border-radius: 4px;
+  background-color: #130541;
+  margin-left: 15px;
+}
+
+/* ===================================footer================================ */
+footer{
+    background-color: #160a39;
+    color: #fff;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    
+}
+.footer-item-one img{
+    width: 180px;
+}
+footer .popular-post{
+    display: flex;
+    margin-bottom: 20px;
+}
+hr{
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+
+/* ==----------------------------------------------------------------main section==== */
+/* =========hero section------------------------------------------------ */
+.hero-grid-item1 {
+    grid-area: left-blog;
+    position: relative;
+  }
+  
+  .hero-grid-item2 {
+    grid-area: right-blog;
+  }
+  
+  .hero-grid-item3 {
+    grid-area: right-bottom;
+  }
+  
+  .hero-grid-item4 {
+    grid-area: right-bottom-end;
+  }
+  
+.hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      'left-blog right-blog right-blog'
+      'left-blog right-bottom right-bottom-end'
+      ;
+    margin: 30px;
+  }
+  .hero-section .life-Style{
+    position: absolute;
+    bottom: 0;
+  }
