@@ -4,75 +4,103 @@
         url('./assets/Public_Sans/PublicSans-VariableFont_wght.ttf') format('ttf');
 
 }
-img,h1,h2,h3,h4,h5,h6{
+
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    line-height: normal;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    line-height: 1.56;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 body {
     font-family: 'Public Sans', sans-serif;
 }
 
-li{
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     cursor: pointer;
 }
-small{
+
+small {
     font-size: 12px;
     display: flex;
     align-items: center;
 }
-small img{
+
+small img {
     margin-right: 6px;
     border-radius: 50%;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1180px;
     width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-h1{
+
+h1 {
     font-size: 30px;
     font-weight: bold;
 }
-h2{
+
+h2 {
     font-size: 24px;
     font-weight: bold;
 }
-h3{
+
+h3 {
     font-size: 22px;
     font-weight: bold;
 }
-h4{
+
+h4 {
     font-size: 18px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -100,6 +128,7 @@ nav {
 .menu-items li {
     margin-right: 30px;
 }
+
 .menu-items li>svg {
     margin-left: 3px;
 }
@@ -107,136 +136,188 @@ nav {
 .menu-btns li {
     margin-right: 20px;
 }
-.menu-btns .subscribe a{
- color: #fff;
-  padding: 9px 18px 8px 23px;
-  border-radius: 4px;
-  background-color: #130541;
-  margin-left: 15px;
+
+.menu-btns .subscribe a {
+    color: #fff;
+    padding: 9px 18px 8px 23px;
+    border-radius: 4px;
+    background-color: #130541;
+    margin-left: 15px;
 }
 
 /* ===================================footer================================ */
-footer{
+footer {
     background-color: #160a39;
     color: #fff;
 }
+
 .footer-content {
     display: grid;
-    grid-template-columns: 40% 30% 30%;
+    grid-template-columns: 30% 35% 35%;
     padding-top: 55px;
-    
+
 }
-.footer-item-one{
-    width: 60%;
-    margin: 0 auto;
+
+.footer-item-one {
+    width: 90%;
 }
-.footer-item-two{
+
+.footer-item-two {
     width: 80%;
     margin: 0 auto;
 }
-.footer-item-one img{
+
+.footer-item-one img {
     width: 180px;
     margin-bottom: 25px;
 }
-footer .popular-post{
+
+footer .popular-post {
     display: flex;
     padding: 20px 0px;
     align-items: center;
 }
-footer .post-border-bottom{
+
+footer .post-border-bottom {
     border-bottom: 1px solid #3f3557;
-} 
+}
+
 footer .popular-post .popular-post-content {
     margin-left: 25px;
 }
-footer .footer-item-three{
+
+footer .footer-item-three {
     width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
 }
-footer .most-view-blog{
+
+footer .most-view-blog {
     min-height: 90px;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+
 }
-footer h3{
+
+footer h3 {
     margin: 0;
 }
-hr{
+
+hr {
     width: 40px;
     height: 2px;
     background-color: #fff;
     display: inline-block;
     margin-top: 10px;
 }
-footer p{
+
+footer p {
     font-size: 16px;
     line-height: 1.56;
     letter-spacing: normal;
     margin: 0 0 10px 0;
 }
-.footer-nav{
+
+.footer-nav {
     background-color: #130731;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.footer-nav h4{
+
+.footer-nav h4 {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     font-size: 16px;
 
 }
-.footer-nav nav{
-    margin: 0;
+
+.footer-nav nav {
     padding: 1rem;
-    justify-content: space-evenly;
-   
 }
-.footer-nav li{
+
+.footer-nav li {
     color: white;
 }
 
 /* ==----------------------------------------------------------------main section==== */
 /* =========hero section------------------------------------------------ */
-.hero-grid-items{
+.hero-grid-items {
     position: relative;
 }
+
 .hero-grid-item1 {
     grid-area: left-blog;
-  }
-  
-  .hero-grid-item2 {
+}
+
+.hero-grid-item2 {
     grid-area: right-blog;
-  }
-  
-  .hero-grid-item3 {
+    margin-bottom: 10px;
+}
+
+.hero-grid-item3 {
     grid-area: right-bottom;
-  }
-  
-  .hero-grid-item4 {
+}
+
+.hero-grid-item4 {
     grid-area: right-bottom-end;
-  }
-  
+}
+
 .hero-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-      'left-blog left-blog right-blog right-blog'
-      'left-blog left-blog right-bottom right-bottom-end'
-      ;
-    margin: 30px;
-  }
-  .hero-section .life-Style{
+        'left-blog left-blog right-blog right-blog'
+        'left-blog left-blog right-bottom right-bottom-end'
+    ;
+    margin: 30px 0px;
+}
+
+.hero-section .life-Style {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 5%;
-  }
-  .hero-section .life-Style a{
+    width: 80%;
+}
+
+.hero-section .life-Style a {
     color: white;
     padding: 4px 13px 5px 13px;
     background-color: #037fff;
     font-size: 12px;
     border-radius: 20px;
-  }
+}
+
+.hero-section .life-Style-color {
+    background-color: #9e03ff !important;
+}
+
+.hero-section .travel {
+    background-color: #f26317 !important;
+}
+
+.hero-section .life-Style h1,
+.hero-section .life-Style h3,
+.hero-section .life-Style h4 {
+    margin: 20px 0;
+}
+
+/* =======================================================feature================================================ */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 6px;
+    border: solid 2px rgba(3, 127, 255, 0.3);
+    background-color: rgba(3, 127, 255, 0.05);
+    margin:30px 0px;
+}
+
+.travel-one {
+    display: flex;
+    align-items: center;
+    width: 32%;
+}
+.travel-one-content{
+    margin-left: 25px;
+}
