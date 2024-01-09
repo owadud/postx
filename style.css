@@ -204,7 +204,7 @@ footer h3 {
     margin: 0;
 }
 
-hr {
+footer hr {
     width: 40px;
     height: 2px;
     background-color: #fff;
@@ -286,6 +286,7 @@ footer p {
     background-color: #037fff;
     font-size: 12px;
     border-radius: 20px;
+    text-transform: uppercase;
 }
 
 .hero-section .life-Style-color {
@@ -316,8 +317,56 @@ footer p {
 .travel-one {
     display: flex;
     align-items: center;
-    width: 32%;
 }
 .travel-one-content{
     margin-left: 25px;
+}
+.travel-one-content h5{
+    margin: 15px 0 12px 0;
+} 
+.travel-one a{
+    color: white;
+    padding: 4px 13px 5px 13px;
+    background-color: #5a17f2;;
+    font-size: 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+/* <!-- technology and follow up section --> */
+.categories{
+    display: flex;
+}
+.fashion-blog-content{
+    margin: 30px 0;
+}
+.fashion-blog-content a{
+    color: white;
+    padding: 4px 13px 5px 13px;
+    background-color: #5a17f2;;
+    font-size: 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.fashion-blog-content h3{
+    margin: 15px 0;
+    width: 80%;
+}
+.together{
+    margin-bottom: 40px;
+}
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+} 
+.social-media li{
+    display: flex;
+    align-items: center;
+}
+.fashion-style{
+    margin-right: 50px;
+}
+.fashion-style,.follow-us{
+    width: 33.33%;
 }
