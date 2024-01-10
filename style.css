@@ -536,6 +536,9 @@ footer p {
   .pagination a:hover:not(.active) {background-color: #ddd;}
 
 /* follow-us */
+.latest-post h2{
+    margin-bottom: 25px;
+}
 .latest-post-and-follow-us{
     display: flex;
     margin: 30px 0 64px 0;
