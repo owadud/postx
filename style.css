@@ -311,62 +311,158 @@ footer p {
     border-radius: 6px;
     border: solid 2px rgba(3, 127, 255, 0.3);
     background-color: rgba(3, 127, 255, 0.05);
-    margin:30px 0px;
+    margin: 30px 0px;
 }
 
 .travel-one {
     display: flex;
     align-items: center;
 }
-.travel-one-content{
+
+.travel-one-content {
     margin-left: 25px;
 }
-.travel-one-content h5{
+
+.travel-one-content h5 {
     margin: 15px 0 12px 0;
-} 
-.travel-one a{
+}
+
+.travel-one a {
     color: white;
     padding: 4px 13px 5px 13px;
-    background-color: #5a17f2;;
+    background-color: #5a17f2;
+    ;
     font-size: 12px;
     border-radius: 20px;
     text-transform: uppercase;
 }
 
 /* <!-- technology and follow up section --> */
-.categories{
+
+
+.categories {
     display: flex;
+    margin: 30px 0px;
 }
-.fashion-blog-content{
-    margin: 30px 0;
+
+.fashion-blog-content {
+    margin: 25px 0 42px 0;
 }
-.fashion-blog-content a{
+
+.fashion-blog-content a {
     color: white;
     padding: 4px 13px 5px 13px;
-    background-color: #5a17f2;;
+    background-color: #5a17f2;
+    ;
     font-size: 12px;
     border-radius: 20px;
     text-transform: uppercase;
     margin-top: 30px;
 }
-.fashion-blog-content h3{
+
+.fashion-blog-content h3 {
     margin: 15px 0;
-    width: 80%;
+    width: 90%;
 }
-.together{
+
+.together {
     margin-bottom: 40px;
 }
-.social-media{
+
+.social-media {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-} 
-.social-media li{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 12px;
+    margin-top: 25px;
+}
+
+.social-media li {
     display: flex;
     align-items: center;
 }
-.fashion-style{
+
+.fashion-style {
     margin-right: 50px;
 }
-.fashion-style,.follow-us{
+
+.fashion-style,
+.follow-us {
     width: 33.33%;
+}
+
+.fashion-style h2,.follow-us h2 {
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgba(3, 127, 255, 0.25);
+    width: calc(100% - 5px);
+    
+}
+
+.fashion-style h2::after,.follow-us h2::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    border-bottom: 3px solid #037fff;
+    width: calc(100% - 70%);
+}
+.fashion-blog{
+    margin-top: 25px;
+}
+.social-media .facebook {
+    padding: 6px 16px 4px 14px;
+    border-radius: 13.5px;
+    background-color: #0955e5;
+    color: white;
+}
+
+.social-media .twitter {
+    background-color: #009dff !important;
+}
+
+.social-media .youtube {
+    background-color: #3c09e5 !important;
+}
+
+.social-media .gg-youtube {
+    margin-right: 5px;
+}
+
+.follow-us-popular-post {
+    position: relative;
+    margin-top: 40px;
+    border-radius: 6px;
+    border: 2px solid rgba(3, 127, 255, 0.25);
+    padding: 40px 50px 25px 37px;
+    
+}
+
+.follow-us-popular-post::before{
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    right: 6px;
+    bottom: 5px;
+    border: 2px solid rgba(3, 127, 255, 0.25);
+    border-radius: 6px;
+}
+
+.follow-us-popular-post h3{
+    font-size: 24px;
+}
+.posts p {
+    font-weight: bold;
+    color: #1c003d;
+    width: 214px;
+    line-height: 1.5;
+    margin: 0 0 14px 0;
+}
+
+.posts .most-view div:not(:last-child) {
+    border-bottom: 1px solid rgba(19, 5, 65, 0.16);
+}
+
+.posts .most-view-blog {
+    padding: 15px 0 18px 0;
 }
