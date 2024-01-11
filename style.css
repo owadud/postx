@@ -705,6 +705,9 @@ footer p {
         width: 100%;
 
     }
+    footer .footer-item-three{
+        width: 100%;
+    }
     .features{
         flex-direction: column;
     }
@@ -728,6 +731,17 @@ footer p {
     }
     .promotional-content{
         flex-direction: column;
+    }
+    .social-media,.tags{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer-nav nav{
+        padding: 1rem 0 0 0;
+    }
+    .container{
+        padding-left: 0;
+        padding-right: 0;
     }
     
   }
