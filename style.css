@@ -79,7 +79,6 @@ small img {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    border: 2px solid red;
 }
 
 h1 {
@@ -633,10 +632,90 @@ footer p {
 .topnav .icon{
     display: none;
 }
+
+/* ====================================================tablet responsive content====== */
+
+@media only screen and (min-width: 768px) and (max-width:1200px){
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    nav{
+        margin: 0;
+    }
+    .menu-items li {
+        margin-right: 20px;
+    }
+    .menu-btns li {
+        margin-right: 10px;
+    }
+    .hero-section{
+        gap: 12px;
+    }
+    .small {
+        font-size: 10px;
+    }
+    .travel-one-content h5{
+        font-size: 13px;
+    }
+    .features{
+        padding: 10px 0;
+    }
+    .social-media{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .follow-up-section .travel-one-content {
+        margin-left: 10px;
+    }
+    .follow-up-section .travel-one{
+        flex-direction: column;
+        gap: 15px;
+        align-items: unset;
+    }
+    .posts p {
+        width: 90%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .promotional-content{
+        padding: 30px 24px;
+    }
+    .latest-post-section{
+        width: 95%;
+        gap:20px;
+
+    }
+    .pagination a{
+        padding: 8px 12px;
+    }
+    .ads{
+        outline: unset;
+    }
+    .ads-content button{
+        margin-top: 50px;
+    }
+    .footer-content{
+        grid-template-columns: 33% 39% 28%;
+    }
+    .footer-nav nav{
+        padding: 1rem 0 0 0;
+    }
+    .footer-nav h4{
+        font-size: 12px;
+    }
+   
+
+}
+
+
 /* ====================================================mobile responsive content====== */
 
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     h1 {
         font-size: 24px;
         
@@ -655,7 +734,10 @@ footer p {
         font-size: 16px;
         
     }
-    
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .nav{
         margin: 0;
     }
@@ -681,7 +763,7 @@ footer p {
     }
 
     .hero-section {
-        display: grid;
+       
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, 1fr);
         grid-template-areas:
@@ -689,7 +771,7 @@ footer p {
             'right-blog right-blog'
             'right-bottom right-bottom-end'
         ;
-        margin: 30px 0px;
+       gap: 10px;
     }
     .fashion-style, .follow-us{
         width: 100%;
@@ -710,9 +792,11 @@ footer p {
     }
     .features{
         flex-direction: column;
+        gap: 25px;
     }
     .categories{
         flex-direction: column;
+        gap: 25px;
     }
     .latest-post-and-follow-us{
         flex-direction: column;
@@ -731,6 +815,14 @@ footer p {
     }
     .promotional-content{
         flex-direction: column;
+        gap:20px;
+        padding: 35px 25px;
+    }
+    .ads-content button{
+        margin-top: 10px;
+    }
+    .pagination a{
+        padding: 8px 10px;
     }
     .social-media,.tags{
         grid-template-columns: repeat(2,1fr);
@@ -739,10 +831,7 @@ footer p {
     .footer-nav nav{
         padding: 1rem 0 0 0;
     }
-    .container{
-        padding-left: 0;
-        padding-right: 0;
-    }
+   
     
   }
   
