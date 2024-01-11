@@ -831,7 +831,22 @@ footer p {
     .footer-nav nav{
         padding: 1rem 0 0 0;
     }
-   
+    .footer-item-one{
+        width: 100%;
+    }
+    .footer-nav{
+        text-align: center;
+    }
+    footer .menu-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    }
+    footer .menu-btns{
+        justify-content: center;
+        gap: 10px;
+        padding:20px 0px;
+    }
     
   }
   
