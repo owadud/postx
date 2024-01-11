@@ -699,7 +699,9 @@ footer p {
         margin-top: 50px;
     }
     .footer-content{
-        grid-template-columns: 33% 39% 28%;
+        grid-template-columns: 32% 40% 28%;
+        padding: 55px 15px 0 15px;
+    
     }
     .footer-nav nav{
         padding: 1rem 0 0 0;
@@ -707,6 +709,7 @@ footer p {
     .footer-nav h4{
         font-size: 12px;
     }
+        
    
 
 }
@@ -740,6 +743,12 @@ footer p {
     }
     .nav{
         margin: 0;
+    }
+    .hero-section .life-Style{
+        bottom: 5%;
+    }
+    header .menu-btns{
+        display: none;
     }
     .menu-items {
         flex-direction: column;
@@ -806,6 +815,7 @@ footer p {
     }
     .footer-content{
         display: block;
+        padding: 55px 15px 0 15px;
     }
     footer nav{
         display: block;
@@ -846,6 +856,9 @@ footer p {
         justify-content: center;
         gap: 10px;
         padding:20px 0px;
+    }
+    .follow-us-two h3{
+        margin-top: 25px;
     }
     
   }
