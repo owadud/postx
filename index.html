@@ -16,7 +16,7 @@
 
 <body>
     <header class="container">
-        <nav>
+        <nav class="topnav" id="myTopnav">
             <h2 class="logo">PostX</h2>
             <ul class="menu-items">
                 <li>Home</li>
@@ -35,7 +35,12 @@
                 <li><i class="gg-youtube"></i></li>
                 <li><i class="gg-search"></i></li>
                 <li class="subscribe"><a href="">Subscribe</a></li>
+                
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="gg-menu"></i>
+              </a>
+           
         </nav>
     </header>
     <!-- ======================================main content================================================ -->
@@ -562,6 +567,17 @@
         </div>
 
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 
 </html>
